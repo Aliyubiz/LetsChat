@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF‑8" />
+  <meta name="viewport" content="width=device‑width, initial‑scale=1.0" />
+  <title>Users — ChatApp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <h3>Contacts</h3>
+    <ul id="userList"></ul>
+    <button onclick="logout()">Logout</button>
+  </div>
+  <div class="chat">
+    <div id="chatHeader"><span>Select a user to chat</span></div>
+    <div id="messages"></div>
+    <div class="chat-input">
+      <input id="messageInput" type="text" placeholder="Type a message…" />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
