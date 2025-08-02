@@ -1,0 +1,16 @@
+body { margin:0; font-family: sans-serif; display: flex; height: 100vh; }
+.sidebar {
+  width: 80px; background: #075E54; color: white; display: flex; flex-direction: column;
+}
+.sidebar h3 { text-align: center; margin-top: 20px; font-size: 14px; }
+.sidebar ul { list-style: none; padding:0; margin:0; overflow-y: auto; flex:1; }
+.sidebar li { padding: 10px; cursor: pointer; border-bottom:1px solid #128C7E; }
+.chat { flex:1; display: flex; flex-direction: column; }
+#chatHeader { background: #128C7E; color: white; padding: 10px; font-weight: bold; }
+#messages { flex:1; padding:10px; overflow-y:auto; background: #ECE5DD; }
+.message { max-width:60%; padding:8px; margin:5px 0; border-radius:8px; position: relative; }
+.sent { background: #DCF8C6; margin-left: auto; }
+.received { background: white; margin-right: auto; }
+.chat-input { display: flex; padding:10px; background: white; }
+.chat-input input { flex:1; padding:10px; border:1px solid #ccc; border-radius:20px; }
+.chat-input button { margin-left:10px; padding:10px 20px; background:#128C7E; color:white; border:none; border-radius:20px; }
